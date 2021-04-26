@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Signup</title>
+</head>
+<body>
+  <div id="signup-page">
+
+    <form onsubmit="validate(); return false">
+
+      <div>
+        <div>
+          First name <span class="soft">(min 2 max 4 characters)</span>
+        </div>
+        <input onclick="clear_error()" type="text" placeholder="First name"
+        maxlength="4"  
+        data-validate="str" data-min="2" data-max="4"
+        >
+      </div>
+
+      <div>
+        <div>
+          Last name <span class="soft">(min 2 max 4 characters)</span>
+        </div>
+        <input onclick="clear_error()" type="text" placeholder="Last name"
+        maxlength="4"  
+        data-validate="str" data-min="2" data-max="4"
+        >    
+      </div>  
+
+      <div>
+        <div>
+          Phone number <span class="soft">(8 digits)</span>
+        </div>
+        <input onclick="clear_error()" type="text" placeholder="Phone number"
+        maxlength="8"    
+        data-validate="int" data-min="10000000" data-max="99999999"
+        >    
+      </div>  
+
+      <div>
+        <div>
+          E-mail
+        </div>
+        <input onclick="clear_error()" type="text" placeholder="E-mail"
+        maxlength="50"    
+        data-validate="email"
+        >    
+      </div>      
+  
+
+      <div>
+        <div>
+          Password <span class="soft">(min 8 max 50 characters)</span>
+        </div>
+        <input onclick="clear_error()" type="password" placeholder="Password"
+        maxlength="50"  
+        data-validate="str" data-min="8" data-max="50" id="password"
+        >
+        <div>
+          Confirm password <span class="soft">(repeat exact password)</span>
+        </div>
+        <input onclick="clear_error()" type="password" placeholder="Password"
+        data-validate="confirm" id="passwordConfirm"
+        >  
+      </div>
+
+      <button>Sign up</button>
+    </form>
+</div>
+
+  
+  
+  <script src="validator.js"></script>
+
+</body>
+</html>

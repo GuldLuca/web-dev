@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hide&Show</title>
+</head>
+<body>
+    
+    <div id="users">
+        <div class="user" id="user-1">
+            <label><b>First Name</b></label>
+            <p class="user-firstname">1</p>
+            <label><b>Last Name</b></label>
+            <p class="user-lastname">A</p>
+            <label><b>E-mail</b></label>
+            <p class="user-email">1@A</p>
+        </div>
+        <div class="user" id="user-2">
+            <label><b>First Name</b></label>
+            <p class="user-firstname">2</p>
+            <label><b>Last Name</b></label>
+            <p class="user-lastname">B</p>
+            <label><b>E-mail</b></label>
+            <p class="user-email">2@B</p>
+        </div>
+        <div class="user" id="user-3">
+            <label><b>First Name</b></label>
+            <p class="user-firstname">3</p>
+            <label><b>Last Name</b></label>
+            <p class="user-lastname">C</p>
+            <label><b>E-mail</b></label>
+            <p class="user-email">3@C</p>
+        </div>
+    </div>
+
+    <script>
+        let users = document.querySelectorAll(".user");
+
+        for(let user of users){
+            let userAttrs = document.querySelectorAll("p");
+
+            for(let userAttr of userAttrs){
+
+                userAttr.addEventListener('click', (event) =>{
+                    let selectedAttr = event.target;
+                    const shown = document.querySelector(".shown");
+                    console.log(userAttr.parentNode.id);
+
+                    if(shown){
+                        shown.classList.remove("shown");
+                    }
+
+                    selectedAttr.classList.add("shown");
+                })
+            }
+        }
+
+        //TODO: Look at the scope - User one by one not all users
+        
+    </script>
+</body>
+</html>

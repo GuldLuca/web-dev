@@ -1,0 +1,65 @@
+.inactive{
+    background-color: lightgrey !important;
+}
+
+#red{
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    margin: 30px;
+
+}
+
+#yellow{
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    margin: 30px;
+
+}
+
+#green{
+    background-color: green;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    margin: 30px;
+}
+
+#traffic-lights{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 180px;
+    background-color: rgb(65, 65, 65);
+    margin-bottom: 30px;
+}
+
+.signup-page{
+    
+}
+
+.error{
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.soft{
+    font-size: 0.8rem;
+    color: lightgrey;
+}
+
+body{
+    background-color:lightslategray
+}

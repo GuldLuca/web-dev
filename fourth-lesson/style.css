@@ -1,0 +1,8 @@
+#users .user{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    max-width: 200px;
+}
